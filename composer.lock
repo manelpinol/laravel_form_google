@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87e90c0ae737482c77cea02ecd0a47ad",
+    "content-hash": "eaf90654cd59488b555ff1b8ed953757",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -121,6 +121,65 @@
                 }
             ],
             "time": "2021-08-15T20:50:18+00:00"
+        },
+        {
+            "name": "curl/curl",
+            "version": "1.9.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-mod/curl.git",
+                "reference": "43436a604b18c2a985cbc3f983be817fbe500e99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-mod/curl/zipball/43436a604b18c2a985cbc3f983be817fbe500e99",
+                "reference": "43436a604b18c2a985cbc3f983be817fbe500e99",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "~2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Curl": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hassan Amouhzi",
+                    "email": "hassan@anezi.net",
+                    "homepage": "http://hassan.amouhzi.com"
+                },
+                {
+                    "name": "php-curl-class",
+                    "homepage": "https://github.com/php-curl-class"
+                },
+                {
+                    "name": "user52",
+                    "homepage": "https://github.com/user52"
+                }
+            ],
+            "description": "cURL class for PHP",
+            "homepage": "https://github.com/php-mod/curl",
+            "keywords": [
+                "curl",
+                "dot"
+            ],
+            "support": {
+                "issues": "https://github.com/php-mod/curl/issues",
+                "source": "https://github.com/php-mod/curl/tree/master"
+            },
+            "time": "2018-09-05T17:16:47+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -492,6 +551,49 @@
                 }
             ],
             "time": "2020-12-29T14:50:06+00:00"
+        },
+        {
+            "name": "emilianozublena/sheetsu-php",
+            "version": "v0.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/emilianozublena/sheetsu-php.git",
+                "reference": "54b7ef12991ce4b8869fe1b53b6b9f4a71b217d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/emilianozublena/sheetsu-php/zipball/54b7ef12991ce4b8869fe1b53b6b9f4a71b217d1",
+                "reference": "54b7ef12991ce4b8869fe1b53b6b9f4a71b217d1",
+                "shasum": ""
+            },
+            "require": {
+                "curl/curl": "^1.5",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sheetsu\\": "src/",
+                    "Sheetsu\\Tests\\": "tests/",
+                    "Sheetsu\\Interfaces\\": "src/interfaces"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Emiliano Zublena",
+                    "email": "ezublena@gmail.com"
+                }
+            ],
+            "description": "PHP 5.6 Library for the Sheetsu API http://sheetsu.com",
+            "support": {
+                "issues": "https://github.com/emilianozublena/sheetsu-php/issues",
+                "source": "https://github.com/emilianozublena/sheetsu-php/tree/v0.0.8"
+            },
+            "time": "2020-07-30T13:47:19+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -3492,6 +3594,46 @@
                 "source": "https://github.com/kawax/laravel-google-sheets/tree/5.8.1"
             },
             "time": "2022-04-21T13:21:21+00:00"
+        },
+        {
+            "name": "sheetdb/sheetdb-php",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sheetdb/sheetdb-php.git",
+                "reference": "1cc8d76e6377adcce71f8c58f3de1f2e3a146e8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sheetdb/sheetdb-php/zipball/1cc8d76e6377adcce71f8c58f3de1f2e3a146e8d",
+                "reference": "1cc8d76e6377adcce71f8c58f3de1f2e3a146e8d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SheetDB\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SheetDB",
+                    "email": "support@sheetdb.io"
+                }
+            ],
+            "description": "PHP Library for accessing google spreadsheet content via SheetDB. https://sheetdb.io",
+            "support": {
+                "issues": "https://github.com/sheetdb/sheetdb-php/issues",
+                "source": "https://github.com/sheetdb/sheetdb-php/tree/1.0.3"
+            },
+            "time": "2020-04-11T14:38:40+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

@@ -17,8 +17,8 @@ return [
     | https://developers.google.com/console
     |
     */
-    'client_id' => env('967237500728-r0o39eahmdelgh5jj0n84civ6r1ejku5.apps.googleusercontent.com', ''),
-    'client_secret' => env('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', ''),
+    'client_id' => env('GOOGLE_CLIENT_ID','967237500728-r0o39eahmdelgh5jj0n84civ6r1ejku5.apps.googleusercontent.com'),
+    'client_secret' => env('GOOGLE_CLIENT_SECRET','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'),
     'redirect_uri' => env('GOOGLE_REDIRECT', ''),
     'scopes' => [],
     'access_type' => 'online',
@@ -54,7 +54,7 @@ return [
          * Path to service account json file. You can also pass the credentials as an array
          * instead of a file path.
          */
-        'file' => env('GOOGLE_SERVICE_ACCOUNT_JSON_LOCATION', ''),
+        'file' => env('GOOGLE_SERVICE_ACCOUNT_JSON_LOCATION', '../storage/credentials.json'),
     ],
 
     /*
@@ -69,5 +69,7 @@ return [
     | NOTE: If client id is specified here, it will get over written by the one above.
     |
     */
-    'config' => [],
+    'config' => [
+        'spreadsheet_id'=> '1yBk1N5SLQw-ofDEgoWF9OPkIvvkmUF4Tfw3qjlMvBlg',
+    ],
 ];
